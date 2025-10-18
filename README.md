@@ -1,3 +1,81 @@
+# 💳 Credit Score Classification using Machine Learning & Plotly
+
+### 🧠 Predicting Customer Creditworthiness with Explainable Insights
+
+This project analyzes and predicts **credit scores (Good / Standard / Poor)** using machine learning models and **interactive visualizations**.  
+It leverages the [Credit Score Classification Dataset by ParisRohan](https://www.kaggle.com/datasets/parisrohan/credit-score-classification) from Kaggle.
+
+---
+
+## 📁 Dataset Overview
+
+The dataset contains customer demographic and financial information.
+
+## ⚙️ Tech Stack
+
+- 🐍 **Python 3**
+- 📊 **Pandas**, **NumPy** — Data preprocessing & analysis  
+- ⚡ **Scikit-learn** — Machine learning (RandomForest, feature importance)  
+- 📈 **Plotly Express**, **Plotly Graph Objects**, **Plotly IO** — Interactive visualizations  
+- 🎨 **Plotly Templates** — Consistent styling for all charts
+
+## 🚀 Project Workflow
+
+### 1️⃣ Data Preprocessing
+- Handle missing values  
+- Encode categorical variables using `LabelEncoder`  
+- Scale numerical features using `StandardScaler`  
+
+### 2️⃣ Model Training
+- Split dataset into training and test sets (80/20)
+- Train a **Random Forest Classifier**
+- Evaluate using:
+  - Classification Report  
+  - Confusion Matrix  
+  - Feature Importance Visualization  
+
+### 3️⃣ Interactive Visual Analysis (Plotly)
+- Occupation vs Credit Score (Histogram)
+- Annual Income vs Credit Score (Box Plot)
+- Number of Bank Accounts vs Credit Score (Box Plot)
+- Outstanding Debt & Delay vs Credit Score
+- Correlation Heatmap
+
+## 📊 Key Insights
+
+- **Income and Debt Levels** strongly influence credit scores.  
+- **Payment behavior** and **credit utilization ratio** have significant predictive power.  
+- Customers with **moderate bank accounts and low delays** tend to have higher credit scores.  
+- Random Forest achieved a **high accuracy (80–90%)** on test data.
+
+---
+
+## 🧩 Visualizations Preview
+
+| Plot | Description |
+|------|--------------|
+| 🟦 Feature Importance | Highlights which factors most affect credit scores |
+| 💰 Income vs Score | Boxplot showing income variation across credit score classes |
+| 🏦 Bank Accounts vs Score | Relationship between number of accounts and creditworthiness |
+| 🔥 Correlation Heatmap | Shows inter-feature relationships and dependencies |
+
+---
+
+## 🧮 Model Evaluation
+
+| Metric | Value (approx.) |
+|--------|-----------------|
+| Accuracy | ~0.85 |
+| Precision | 0.83 |
+| Recall | 0.82 |
+| F1 Score | 0.83 |
+
+---
+📁 Credit-Score-Classification/
+│
+├── 📄 README.md → Project documentation + Visualizations screenshots
+├── 📊 credit_score.py → Full code (EDA + ML + Visualizations)
+
 ##Classification Report
 
 <img width="429" height="226" alt="image" src="https://github.com/user-attachments/assets/b1b0df93-89f2-4b4d-9869-c7c04658dd75" />
